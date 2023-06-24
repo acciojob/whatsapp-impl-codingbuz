@@ -1,20 +1,27 @@
 package com.driver;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-
 import java.util.Date;
 
-
-@Getter
-@Setter
-@AllArgsConstructor
 public class Message {
     private int id;
     private String content;
     private Date timestamp;
 
-    public Message(){}
+    public Message(int id, String content) {
+        this.id = id;
+        this.content = content;
+        this.timestamp = new Date();
+    }
 
+    public int getId() {
+        return id;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public Date getTimestamp() {
+        return timestamp;
+    }
 }
