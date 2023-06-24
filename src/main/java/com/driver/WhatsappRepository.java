@@ -26,4 +26,7 @@ public class WhatsappRepository {
         this.customGroupCount = 0;
         this.messageId = 0;
     }
+
+    public void createUser(String name, String mobile) {
+    }
 }
